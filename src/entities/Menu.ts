@@ -4,7 +4,7 @@ class Menu {
   id: string;
   nameDish: string;
   description: string;
-  ingredients: string;
+  ingredient: string;
 
   constructor() {
     this.id = uuidv4();
