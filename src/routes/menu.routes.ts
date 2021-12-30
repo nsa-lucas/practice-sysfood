@@ -14,8 +14,4 @@ menuRoutes.post('/', (request, response) => {
   return response.status(201).json({ dish });
 });
 
-menuRoutes.get('/', (request, response) => {
-  return response.json({ message: 'devhost already to using' });
-});
-
 export { menuRoutes };
