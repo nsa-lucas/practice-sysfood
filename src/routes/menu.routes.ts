@@ -1,4 +1,5 @@
 import { Router } from 'express';
+
 import { MenuRepository } from '../repositories/MenuRepository';
 
 const menuRoutes = Router();
@@ -11,6 +12,10 @@ menuRoutes.post('/', (request, response) => {
   const dish = menuRepository.create({ nameDish, description, ingredients });
 
   return response.status(201).json({ dish });
+});
+
+menuRoutes.get('/', (request, response) => {
+  return response.json({ message: 'devhost already to using' });
 });
 
 export { menuRoutes };

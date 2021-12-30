@@ -1,4 +1,5 @@
 import express from 'express';
+
 import { menuRoutes } from './routes/menu.routes';
 
 const app = express();
